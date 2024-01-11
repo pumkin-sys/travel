@@ -1,0 +1,5 @@
+<app-loading *ngIf="!isUserLocationReady; else cargado"> </app-loading>
+<app-navbar></app-navbar>
+<ng-template #cargado>
+  <app-map-view></app-map-view>
+</ng-template>
